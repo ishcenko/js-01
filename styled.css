@@ -1,0 +1,16 @@
+.title {
+  font-style: italic;
+  font-size: 36px;
+  display: block;
+  text-align: center;
+  color: chartreuse;
+}
+.span-lesson {
+  font-size: 28px;
+  color: coral;
+}
+
+.span-1 {
+  font-size: 28;
+  color: blue;
+}
