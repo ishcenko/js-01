@@ -46,3 +46,52 @@
 
 //* Example 4 - Вкладені розгалуження
 // Напиши скрипт, який порівнює числа у змінних a та b. Якщо обидва значення більше 100, то виведи в консоль максимальне з них. В протилежному випадку у консолі повинна бути сума значення b та числа 512.
+const a = 120;
+const b = 99;
+if (a >= 100 && b >= 100) {
+  //   if (a > b) {
+  //     console.log(a);
+  //   } else {
+  //     console.log(b + 512);
+  //   }
+  //   console.log("Yes");
+  console.log(Math.max(a, b));
+} else {
+  console.log(b + 512);
+}
+
+let result = a > 100 && b > 100 ? (a > b ? a : b) : b + 512;
+console.log(result);
+
+//* Example 10 - Дедлайн здачі проекту (switch)
+// Виконай рефакторинг коду задачі номер 5 використовуючи switch.
+const daysUntil = 0;
+
+switch (daysUntil) {
+  case 0: {
+    console.log("Now");
+    break;
+  }
+  case 1: {
+    console.log("Now+1");
+    break;
+  }
+  case 2: {
+    console.log("Now+2");
+
+    break;
+  }
+  default: {
+    console.log("Now++");
+  }
+}
+
+// if (daysUntil === 0) {
+//   console.log("Now");
+// } else if (daysUntil === 1) {
+//   console.log("Now+1");
+// } else if (daysUntil === 2) {
+//   console.log("Now+2");
+// } else {
+//   console.log("Now++");
+// }
