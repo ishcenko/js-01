@@ -183,6 +183,7 @@ account.withdraw(4500);
 account.withdraw(2000);
 account.withdraw(5500);
 account.withdraw(14855);
+// account.withdraw(700);
 
 console.log(account.transactions);
 console.log(account.getBalance());
