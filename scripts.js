@@ -52,3 +52,8 @@
 //   names: "Jacob,William,Solomon,Artemis",
 //   phones: "89001234567,89001112233,890055566377,890055566300",
 // });
+
+$(".option").click(function () {
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+});
