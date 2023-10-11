@@ -141,21 +141,32 @@
 // // boo.call({ username: "Lena" });
 //!===================
 
-const customer = {
-  firstName: "Jacob",
-  lastName: "Mercer",
-  getFullName() {
-    // console.log(this);
-    return `${this.firstName} ${this.lastName}`;
-  },
-};
+// const customer = {
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   getFullName() {
+//     // console.log(this);
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
 
-function makeMessage(callback) {
-  //   console.log(callback);
-  // callback() - це виклик методу getFullName без об'єкта
-  //   console.log(`Обробляємо заявку від ${callback.call(customer)}.`); // 1.1
-  console.log(`Обробляємо заявку від ${callback}.`); // 1.2
-}
+// function makeMessage(callback) {
+//   //   console.log(callback);
+//   // callback() - це виклик методу getFullName без об'єкта
+//   //   console.log(`Обробляємо заявку від ${callback.call(customer)}.`); // 1.1
+//   console.log(`Обробляємо заявку від ${callback}.`); // 1.2
+// }
 
-// makeMessage(customer.getFullName); // 1.1
-makeMessage(customer.getFullName.bind(customer)); // 1.2
+// // makeMessage(customer.getFullName); // 1.1
+// makeMessage(customer.getFullName.bind(customer)); // 1.2
+
+//!===============================
+let text = "100";
+text = text.padEnd(12, "0");
+console.log(text);
+
+let number = "123";
+number = number.padStart(12, "*");
+console.log(number);
+
+//!==========
