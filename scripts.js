@@ -117,6 +117,45 @@
 // user2.foo();
 
 //!==================
+// function boo() {
+//   console.log(this);
+// }
+// // const foo = () => console.log(this);
+// // foo();
 
-const foo = () => console.log(this);
-foo();
+// const user = {
+//   username: "Alex",
+//   sayHi() {
+//     // const foo = () => console.log(this);
+//     // foo.call({ username: "Lena" });
+//     // const copyFoo = foo.bind({ username: "Lena" });
+//     // copyFoo();
+
+//     // boo();
+//     console.log(`Hello ${this.username}`);
+//   },
+// };
+
+// user.sayHi();
+
+// // boo.call({ username: "Lena" });
+//!===================
+
+const customer = {
+  firstName: "Jacob",
+  lastName: "Mercer",
+  getFullName() {
+    // console.log(this);
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+
+function makeMessage(callback) {
+  //   console.log(callback);
+  // callback() - це виклик методу getFullName без об'єкта
+  //   console.log(`Обробляємо заявку від ${callback.call(customer)}.`); // 1.1
+  console.log(`Обробляємо заявку від ${callback}.`); // 1.2
+}
+
+// makeMessage(customer.getFullName); // 1.1
+makeMessage(customer.getFullName.bind(customer)); // 1.2
