@@ -30,30 +30,30 @@
 // const list = `<ul>${listContant}</ul>`;
 // document.body.insertAdjacentHTML("afterbegin", list);
 
-// const numbers = [
-//   "q",
-//   "w",
-//   "e",
-//   "r",
-//   "t",
-//   "y",
-//   "u",
-//   "i",
-//   "o",
-//   "p",
-//   "a",
-//   "s",
-//   "d",
-//   "f",
-//   "g",
-//   "h",
-//   "j",
-//   "k",
-// ];
+const numbers = [
+  "q",
+  "w",
+  "e",
+  "r",
+  "t",
+  "y",
+  "u",
+  "i",
+  "o",
+  "p",
+  "a",
+  "s",
+  "d",
+  "f",
+  "g",
+  "h",
+  "j",
+  "k",
+];
 
-// const numberList = numbers.reduce((acc, nums) => acc + `<li>${nums}</li>`, "");
-// const listNum = `<ul>${numberList}</ul>`;
-// document.body.insertAdjacentHTML("beforebegin", listNum);
+const numberList = numbers.reduce((acc, nums) => acc + `<li>${nums}</li>`, "");
+const listNum = `<ul>${numberList}</ul>`;
+document.body.insertAdjacentHTML("beforebegin", listNum);
 
 //* Створити кілька кнопок на основі масива з обєктами використовуючи createElement
 
