@@ -145,8 +145,15 @@ body {
 
   font-size: 22px;
   margin: 10px;
+  padding-left: 22px;
+  padding-right: 15px;
   border: 1px solid rgb(1, 1, 42);
-  padding: 12px 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-radius: 7px;
-  /* min-width: 100px; */
+  display: inline-block;
+  flex-direction: row;
+  width: 150px;
+  text-align: center;
+  align-items: center;
 }
