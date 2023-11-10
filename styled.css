@@ -173,15 +173,19 @@ h3 {
   width: 1440px;
 }
 .text-size {
+  padding-left: 35px;
   width: 800px;
   margin-right: 50px;
   font-size: 26px;
 }
 .text-photo {
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
   display: flex;
 }
 
 .hummer {
-  width: 274px;
-  height: 268px;
+  width: 400px;
+  height: 400px;
 }
