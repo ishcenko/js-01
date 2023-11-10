@@ -7,14 +7,37 @@
     <link rel="stylesheet" href="./styled.css" />
   </head>
   <body>
-    <h1 class="title">
-      JS <span class="span-lesson">lesson</span> <span class="span-1">1</span>
-    </h1>
-    <button class="button" type="button" ontouchstart>
-      <div class="button-top">3D Button</div>
-      <div class="button-bottom">1111</div>
-      <div class="button-base"></div>
-    </button>
+    <section class="title">
+      <h1 class="title">
+        JS <span class="span-lesson">lesson</span>
+        <span class="span-1">7/1</span>
+      </h1>
+    </section>
+
+    <div class="counter">
+      <h2>Scroll</h2>
+      <br />
+      <div class="box gradient-border" id="box">
+        Without throttled: <span id="otuputScrollStandart">0</span>
+      </div>
+      <div class="box gradient-border" id="box">
+        With throttled: <span id="otuputScrollThrottled">0</span>
+      </div>
+    </div>
+
+    <div class="counter counter-resize">
+      <h2>Resize</h2>
+      <div class="box gradient-border" id="box">
+        Without throttled: <span id="otuputResizeStandart">0</span>
+      </div>
+      <div class="box gradient-border" id="box">
+        With throttled: <span id="otuputResizeThrottled">0</span>
+      </div>
+    </div>
+    <script src="
+https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+"></script>
+
     <script src="scripts.js"></script>
   </body>
 </html>
