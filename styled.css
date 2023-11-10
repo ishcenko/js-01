@@ -26,7 +26,12 @@ body {
     "Segoe UI Emoji";
   background-color: #f6f1e6;
 }
-
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
 .button {
   position: relative;
   padding: 0 8px 12px;
@@ -137,4 +142,46 @@ body {
     0 1px 1px 0 rgb(255 255 255 / 0.75),
     inset 0 2px 2px rgb(0 0 0 / 0.25)
   );
+}
+
+.cars-title {
+  font-size: 326px;
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+.section-title {
+  padding-bottom: 100px;
+  margin-top: 0;
+  max-width: 100%;
+  height: 550px;
+  background-image: url(./img/hamer-4x.jpg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 200px;
+  text-align: center;
+  font-weight: bold;
+  background-size: cover;
+}
+
+.text {
+  font-size: 26px;
+  color: black;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 1440px;
+}
+.text-size {
+  width: 800px;
+  margin-right: 50px;
+  font-size: 26px;
+}
+.text-photo {
+  display: flex;
+}
+
+.hummer {
+  width: 274px;
+  height: 268px;
 }
