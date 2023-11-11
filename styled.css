@@ -6,19 +6,19 @@
 body {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 25px;
   padding-top: 50px;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #84b7d1;
+  background: #b0e1f9;
 }
 .title {
   color: #f52d05;
   margin-bottom: 100px;
 }
 .counter {
-  position: sticky;
+  /* position: sticky; */
   top: 100px;
   display: flex;
   padding-bottom: 25px;
@@ -35,7 +35,6 @@ body {
   margin-left: 8px;
   margin-right: 8px;
   padding: 12px;
-  /* border: 3px solid #f4c003; */
   border-radius: 3px;
 }
 #box {
@@ -49,7 +48,6 @@ body {
   font-size: 2.5rem;
 }
 .gradient-border {
-  /* --borderWidth: 3px; */
   background: #f9f9f6;
   position: relative;
   border-radius: 4px;
@@ -64,17 +62,17 @@ body {
   background: linear-gradient(
     60deg,
     #fb8005,
-    #f52d05,
+    #d3892f,
     #f40549,
     #d105f5,
     #0554f2,
-    #04d6f6,
+    #67dff1,
     #04f4d4,
     #02fa40
   );
   border-radius: calc(2 * 3px);
   z-index: -1;
-  animation: animatedgradient 999ms ease alternate infinite;
+  animation: animatedgradient 7000ms ease alternate infinite;
   background-size: 300% 300%;
 }
 @keyframes animatedgradient {
@@ -90,21 +88,34 @@ body {
 }
 
 .input {
-  display: inline-block;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+  min-width: 600px;
+  /* margin-left: 25px; */
+  color: blue;
+  font-style: italic;
+  font-size: 28px;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 form {
   width: 200px;
   margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   text-align: center;
 }
 legend {
   font-size: 30px;
+  margin-bottom: 15px;
 }
 fieldset {
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.141);
+  border: 3px solid;
   border-color: #f4c003;
 }
 
@@ -118,14 +129,15 @@ form label input {
   display: block;
   margin-top: 10px;
   border-radius: 8px;
-  padding: 5px;
+  padding: 8px;
+  border: 5px solid;
   border-color: #f4c003;
   outline: none;
 }
 
 .wrong {
-  border-color: red;
+  border-color: rgb(175, 4, 4);
 }
 .correct {
-  border-color: green;
+  border-color: rgb(7, 247, 7);
 }
