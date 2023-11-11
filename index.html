@@ -10,11 +10,27 @@
     <h1 class="title">
       JS <span class="span-lesson">lesson</span> <span class="span-1">1</span>
     </h1>
-    <button class="button" type="button" ontouchstart>
-      <div class="button-top">3D Button</div>
-      <div class="button-bottom">1111</div>
-      <div class="button-base"></div>
-    </button>
+
+    <div class="container">
+      <h2 class="title">Скільки коштує мясо на шашлики?</h2>
+      <form action="#" class="form" id="form">
+        <label for="price">Ціна грн</label>
+        <input type="number" id="price" name="price" value="200" />
+        <label for="quantity"
+          >Кількість<span class="amount" id="amount">1</span>кг
+        </label>
+        <input
+          type="range"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          max="20"
+        />
+      </form>
+      <p class="text-right total" id="total"></p>
+    </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>
