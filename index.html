@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="./styled.css" />
   </head>
   <body>
-    <h1 class="title">
-      JS <span class="span-lesson">lesson</span> <span class="span-1">1</span>
-    </h1>
-    <button class="button" type="button" ontouchstart>
-      <div class="button-top">3D Button</div>
-      <div class="button-bottom">1111</div>
-      <div class="button-base"></div>
-    </button>
-    <script src="scripts.js"></script>
+    <div id="myDIV" class="header">
+      <h2 style="margin: 5px">My To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title..." />
+      <span id="addBtn" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+      <!-- <li>Hit the gym</li>
+      <li class="checket">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy egge</li>
+      <li>Raed a book</li>
+      <li>Organize office</li> -->
+    </ul>
+    <script src="scripts/scripts.js" type="module"></script>
   </body>
 </html>
