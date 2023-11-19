@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="./styled.css" />
   </head>
   <body>
-    <h1 class="title">
-      JS <span class="span-lesson">lesson</span> <span class="span-1">1</span>
-    </h1>
-    <button class="button" type="button" ontouchstart>
-      <div class="button-top">3D Button</div>
-      <div class="button-bottom">1111</div>
-      <div class="button-base"></div>
-    </button>
-    <script src="scripts.js"></script>
+    <div class="timers">
+      <div class="clock-block">
+        <div id="functional-timer">
+          <h2 class="clock" id="functionalTitle"></h2>
+        </div>
+        <div class="class-timer">
+          <h2 id="classTitle"></h2>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="stop-btn" id="stopTimer">Stop</button>
+        <button class="start-btn" id="startTimer">Start</button>
+      </div>
+    </div>
+    <script src="scripts.js" type="module"></script>
   </body>
 </html>
